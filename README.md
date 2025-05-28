@@ -58,7 +58,6 @@ The model successfully translates real photos into stylized cartoon images, pres
 
 We assess model performance with the **Fréchet Inception Distance (FID)**, a commonly used metric to evaluate the quality and diversity of generated images relative to a target domain.
 
-
 ---
 
 ### Optional: User Study
@@ -72,7 +71,7 @@ To gather subjective feedback, a small user study was conducted with 10 particip
 
 ### Training Curves
 
-Training stability is tracked using adversarial, cycle-consistency, and identity losses:
+Training stability is tracked using adversarial, cycle-consistency, and identity losses
 
 
 
@@ -95,7 +94,6 @@ Training an unpaired image-to-image model like CycleGAN introduces several techn
 - **Color Bleed and Artifacts**: In early epochs, outputs often exhibit unnatural colors, checkerboard patterns, or loss of facial detail.
 - **Overfitting to Backgrounds**: If the cartoon dataset lacks diversity, the generator may memorize background patterns rather than learning style features.
 
-> These issues were mitigated through careful data preprocessing, early stopping, and cycle-consistency regularization.
 
 
 
