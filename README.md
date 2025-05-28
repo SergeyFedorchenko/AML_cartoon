@@ -52,20 +52,12 @@ The model successfully translates real photos into stylized cartoon images, pres
 | Real Photo | Cartoonized Output |
 |------------|--------------------|
 
->  *Images are sampled from the test set using the best model checkpoint.*
-
 ---
 
 ### Quantitative Evaluation
 
 We assess model performance with the **Fréchet Inception Distance (FID)**, a commonly used metric to evaluate the quality and diversity of generated images relative to a target domain.
 
-| Comparison                             | FID Score ↓ |
-|----------------------------------------|-------------|
-| Real photos vs Cartoon dataset         | 72.3        |
-| Stylized outputs vs Cartoon dataset    | **39.6**    |
-
-> Lower FID indicates closer resemblance to the target style.
 
 ---
 
@@ -76,20 +68,13 @@ To gather subjective feedback, a small user study was conducted with 10 particip
 - **Image Realism**
 - **Semantic Preservation**
 
-**Average Ratings (out of 5):**
-- Style Accuracy: 4.2
-- Realism: 3.8
-- Content Preservation: 4.4
-
 ---
 
 ### Training Curves
 
 Training stability is tracked using adversarial, cycle-consistency, and identity losses:
 
-<p align="center">
-  <img src="results/loss_plot.png" alt="Training Loss Curve" width="500"/>
-</p>
+
 
 ---
 
